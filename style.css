@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('./assest/fonts/NeueMachina-Regular.otf');
+}
+
+
+:root {
+    --font-main: 'Gilroy ExtraBold';
+    --font-secondary: "Work Sans", sans-serif;
+    --salmon: #ef9d71;
+    --dark: #000;
+    --light: #fff;
+    --light-blue: #aedee0;
+
+}
+
+* {
+    font-family: var(--font-secondary);
+    /* overflow-x: hidden; */
+}
+
+*::selection {
+    background-color: var(--salmon);
+}
+
+body[theme="black"] {
+    background-color: var(--dark);
+}
+
+body[theme="black"] .section {
+    color: var(--light);
+}
+
+body[theme="light-blue"] {
+    background-color: var(--light-blue)
+}
+
+body[theme="salmon"] {
+    background-color: var(--salmon)
+}
+
+body[theme="salmon"] .section {
+    color: var(--light)
+}
+
+body[theme="light"] {
+    background-color: var(--light);
+}
+
+body[theme="light"] .section {
+    color: var(--dark);
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* .textContainer_main{
+    -webkit-box-shadow: 0px -70px 37px 19px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -70px 37px 19px rgba(0,0,0,1);
+    box-shadow: 0px -70px 37px 19px rgba(0,0,0,1);
+} */
+
+.videoContainer {
+    clip-path: circle(var(--clip)at 50% 50%);
+}
+
+.textContainer {
+    top: 5vh;
+}
+
+.row:nth-child(1) {
+    transform: translateX(-2%);
+}
+
+.row:nth-child(2) {
+    transform: translateX(-4%);
+}
+
+.row:nth-child(3) {
+    transform: translateX(1%);
+}
+
+.heroText {
+    font-family: var(--font-secondary);
+    text-transform: lowercase;
+    font-size: 3.4vw;
+    /* font-weight: 600; */
+    letter-spacing: -6px;
+    line-height: 1.3;
+}
+
+.heading {
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.section2Heading {
+    font-size: 3vw;
+    line-height: 4vw;
+    font-weight: 300;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.section2Heading span {
+    font-size: 3vw;
+    line-height: 4vw;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.section3Heading {
+    height: fit-content;
+    overflow: hidden;
+}
+
+.section3Heading span {
+    display: inline-block;
+}
+
+.slide_text h1 {
+    font-size: 6.5vw;
+    color: var(--dark);
+    font-family: 'NeueMachina';
+}
+
+.slide2_Contant h1 {
+    font-size: 7.5vw;
+    font-family: 'NeueMachina';
+    font-weight: 600;
+
+}
+
+.slide2_Contant h3 {
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'NeueMachina';
+    line-height: 5vh;
+    color: black;
+    font-weight: 600;
+
+}
+
+.ourTeam_heading {
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'NeueMachina';
+}
+
+.left h1 {
+    /* NEED TO CHANGE THE CLASS NAME */
+    font-family: 'NeueMachina';
+}
+
+.left h3 {
+    /* NEED TO CHANGE THE CLASS NAME */
+    font-family: 'NeueMachina';
+}
+
+.list_item_pic {
+    display: none;
+}
+
+.chip-text {
+    font-family: 'NeueMachina';
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.exploreSec_text {
+    font-family: 'NeueMachina';
+}
+
+@media (max-width:460px) {
+    .heroText {
+        font-size: 11vw;
+        letter-spacing: normal;
+        line-height: 14vw;
+    }
+
+    .imgdiv {
+        width: 10vw !important;
+        height: 10vw !important;
+    }
+
+    .textContainer {
+        overflow: none !important;
+    }
+    .textContainer_main{
+        top:54.5% !important;
+        left:39.5%;
+    }
+
+    .elem {
+        gap: 10vw;
+    }
+
+    .videoContainer {
+        scale: 5;
+    }
+
+    .heading {
+        font-size: 4.5vw;
+        width: 100%;
+        margin-top: 25vw;
+    }
+
+    .textContainer_main {
+        bottom: 14vw;
+    }
+
+    .section2 {
+        flex-wrap: wrap;
+        flex-direction: column !important;
+        padding: 1rem !important;
+        /* overflow-x:hidden; */
+    }
+
+    .section2Heading {
+        height: fit-content;
+        overflow: visible;
+        line-height: 1.5rem !important;
+        margin-top: 8vw;
+        position: relative;
+    }
+
+    /* .headingContainer{
+        position: sticky;
+        top: 15%;
+    } */
+    .section2Heading span {
+        font-size: 11vw;
+    }
+
+    .section2Heading span:nth-child(1) {
+        margin-right: 3vw;
+    }
+
+    .card h2:nth-child(4) {
+        font-size: 5.5vw;
+    }
+
+    .card {
+        padding: 1.5rem !important;
+    }
+
+    .ltext {
+        width: 100% !important;
+        position: relative !important;
+        /* top: -15% !important; */
+    }
+
+    .ltext p {
+        width: 100%;
+        line-height: 2rem;
+        font-weight: 400;
+        font-size: 3.9vw;
+    }
+
+    .custom_btn {
+        padding: 1rem !important;
+    }
+
+    .cards {
+        display: flex;
+        gap: 2rem !important;
+
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start !important;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .card {
+        margin: 0 !important;
+        padding: 5vw;
+        display: flex;
+        flex-direction: column-reverse !important;
+        justify-content: center !important;
+        width: 90vw !important;
+        /* height: 13%; */
+
+    }
+
+    .card h2 {
+        font-size: 5.5vw;
+        margin: 2.5vw 0;
+    }
+
+    .section3Heading span {
+        font-size: 12vw;
+        line-height: 13vw;
+    }
+
+    .slide_text {
+        /* margin-bottom: 6vw; */
+        position: relative;
+        bottom: 20vw;
+    }
+
+    .slide_img {
+        top: 73vh !important;
+        transform: translate(-50%, -50%) !important;
+        width: 45vw !important;
+        height: 45vw !important;
+    }
+
+    .slide2_Contant p {
+        width: 60% !important;
+        font-size: 4vw;
+        color: black;
+        line-height: 6vw !important;
+        top: 25vw;
+    }
+
+    .slide2_Contant h1 {
+        font-size: 12vw !important;
+    }
+
+    .slide2_Contant {
+        width: 100% !important;
+    }
+
+    .slide2_Contant h3 {
+        font-size: 5vw !important;
+        width: 100% !important;
+        line-height: normal !important;
+    }
+
+    .slides {
+        gap: 0px !important;
+    }
+
+    .slide img:nth-child(2) {
+        display: none;
+    }
+
+    .slide img:nth-child(3) {
+        display: none;
+    }
+
+    .slide img:nth-child(5) {
+        display: none;
+    }
+    .slide svg:nth-child(2){
+        display: none;
+    }
+    .slide svg:nth-child(3){
+        display: none;
+    }
+
+    .ourTeam_heading {
+        font-size: 10vw;
+    }
+
+    .left h3 {
+        display: none !important;
+    }
+
+    .left h1 {
+        font-size: 5.5vw !important;
+    }
+
+    .list_item {
+        padding: 1rem !important;
+    }
+
+    .ourTeamList {
+        padding: 1rem !important;
+    }
+
+    .right h3 {
+        font-size: 4vw;
+    }
+
+    .exploreSec {
+        flex-direction: column !important;
+    }
+
+    .exploreP1 {
+        display: none;
+    }
+
+    .exploreSec:nth-child(1) {
+        width: 100% !important;
+    }
+
+    .exploreSecP1 {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .exploreLeftSec {
+        width: 100%;
+    }
+
+    .leading-snug {
+        font-size: 8vw !important;
+        margin: 5vw 0 !important;
+    }
+
+    .exploreBtn {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .explore-card {
+        flex-wrap: wrap !important;
+        width: 100%;
+        margin: 3vh 0;
+        gap: 2.5rem;
+    }
+
+    .exploreCard {
+        transform: translate(10px, 10px) !important;
+        height: 150vw !important;
+        padding: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .exploreCard_img {
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .chip-text {
+        font-size: 5vw;
+    }
+
+    .chip p {
+        font-size: 5vw;
+    }
+
+    .explore-card .exploreCard:nth-child(2) {
+        padding-top: 3rem;
+    }
+
+    .lastSec {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        padding: 1rem;
+        height: fit-content;
+    }
+    .lastSec div{
+        width: 100%;
+    }
+    .lastSec h2{
+        font-size: 10vw;
+        line-height: normal;
+    }
+    .customBtn{
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+    .sm-hidden{
+        display: none;
+    }
+    .mh{
+        height: 52.5rem;
+    }
+    .sub-footer{
+        align-items: center;
+    }
+    .tandc{
+        flex-direction: row;
+    }
+}
